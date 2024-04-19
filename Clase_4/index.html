@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 4</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Formularios</h1>
+    </header>
+    <main>
+      <form enctype="multipart/form-data" method="post" action="./page/gracias.html">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input
+            placeholder="Nombre y Apellido"
+            id="nombre"
+            type="text"
+            name="nombre"
+          />
+        </div>
+        <div>
+          <label for="pass">Password:</label>
+          <input id="pass" type="password" name="pass" />
+        </div>
+        <div>
+          <label for="mail">Email:</label>
+          <input id="mail" type="email" name="mail" />
+        </div>
+        <div>
+          <label for="num">Numero:</label>
+          <input id="num" type="number" name="num" />
+        </div>
+        <div>
+          <label for="fecha">Fecha:</label>
+          <input id="fecha" type="date" name="fecha" />
+        </div>
+        <div>
+          <label for="color">Color:</label>
+          <input id="color" type="color" name="color" />
+        </div>
+        <fieldset>
+          <legend>Genero/Sexo</legend>
+          <div>
+            <input type="radio" name="genero" value="M" />
+            <label for="genero">Masculino</label>
+          </div>
+          <div>
+            <input type="radio" name="genero" value="F" />
+            <label for="genero">Femenino</label>
+          </div>
+          <div>
+            <input type="radio" name="genero" value="X" />
+            <label for="genero">No binario</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Helado</legend>
+          <div>
+            <div>
+              <input id="choco" type="checkbox" name="Chocolate" value="Chocolate" />
+              <label for="choco">Chocolate</label>
+            </div>
+            <div>
+              <input id="dulce" type="checkbox" name="Dulce de Leche" value="Dulce de Leche" />
+              <label for="dulce">Dulce de Leche</label>
+            </div>
+            <div>
+              <input id="crema" type="checkbox" name="Crema Rusa" value="Crema Rusa" />
+              <label for="crema">Crema Rusa</label>
+            </div>
+            <div>
+              <input id="limon" type="checkbox" name="Limon" value="Limon" />
+              <label for="limon">Limon</label>
+            </div>
+          </div>
+        </fieldset>
+        <div>
+          <label for="pais">Pais:</label>
+          <select name="pais" id="pais">
+            <optgroup label="America">
+              <option value="Argentina">Argentina</option>
+              <option value="Chile">Chile</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Surinam">Surinam</option>
+            </optgroup>
+            <optgroup label="Eurasia">
+              <option value="Rusia">Rusia</option>
+              <option value="Japon">Japon</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="rang">Rango:</label>
+          <input type="range" name="rang" id="rang">
+        </div>
+        <div>
+          <label for="archivo">Subir archivo:</label>
+          <input id="archivo" type="file">
+        </div>
+        <div>
+          <label for="largo">Texto Largo</label>
+          <textarea name="largo" id="largo" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <input type="submit">
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
