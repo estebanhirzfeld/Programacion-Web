@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 9</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="w-80 m-auto">
+    <header class="py-10">
+      <nav class="flex justify-center items-center gap-5">
+        <div>
+          <img
+            class="logo"
+            src="./imgs/International-Pokémon-logo.png"
+            alt=""
+          />
+        </div>
+        <ul class="flex justify-center items-center gap-5">
+          <li><a href="">Section 1</a></li>
+          <li><a href="">Section 1</a></li>
+          <li><a href="">Section 1</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="my-10">
+        <h1 class="text-center my-10">Pokemon Fan Page</h1>
+        <figure>
+          <img class="w-100" src="./imgs/banner.jpg" alt="" />
+          <figcaption></figcaption>
+        </figure>
+      </section>
+      <section class="my-10 flex justify-center items-stretch gap-5">
+        <article class="flex-25">
+          <figure>
+            <img
+              class="w-100 aspect-square object-contain"
+              src="./imgs/rojo-fuego.png"
+              alt="pokemon rojo fuego.png"
+            />
+            <figcaption>Pokemon Rojo Fuego</figcaption>
+          </figure>
+        </article>
+        <article class="flex-25">
+          <figure>
+            <img
+              class="w-100 aspect-square object-contain"
+              src="./imgs/ruby.png"
+              alt="pokemon ruby.png"
+            />
+            <figcaption>Pokemon Ruby</figcaption>
+          </figure>
+        </article>
+        <article class="flex-25">
+          <figure>
+            <img
+              class="w-100 aspect-square object-contain"
+              src="./imgs/safiro.png"
+              alt="pokemon safiro.png"
+            />
+            <figcaption>Pokemon Safiro</figcaption>
+          </figure>
+        </article>
+        <article class="flex-25">
+          <a href="#verdeHoja">
+            <figure>
+              <img
+              class="w-100 aspect-square object-contain"
+              src="./imgs/verde-hoja.png"
+              alt="pokemon verde hoja.png"
+              />
+              <figcaption>Pokemon Verde Hoja</figcaption>
+            </figure>
+          </a>
+          </article>
+      </section>
+      <h2 class="text-center my-10">Contacto</h2>
+      <section class="flex justify-around items-center gap-5 flex-wrap">
+        <article class="flex-50">
+          <iframe
+            class="aspect-video w-100"
+            src="https://www.youtube.com/embed/Rsv2VkoIpk0?si=VggewGDQYH-m-u86"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </article>
+        <article class="flex-50">
+          <form
+            id="formulario"
+            action=""
+            method="post"
+            class="w-100 flex flex-col"
+          >
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input id="nombre" name="nombre" type="text" />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" name="email" type="email" />
+            </div>
+            <div>
+              <label for="asunto">Asunto:</label>
+              <textarea
+                placeholder="Tu mensaje aqui..."
+                name="asunto"
+                id="asunto"
+                cols="19"
+                rows="5"
+              ></textarea>
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </article>
+      </section>
+      <div id="verdeHoja" class="backdrop">
+        <div class="modal">
+          <div class="content">
+            <header class="flex justify-between items-start">
+              <h1>Verde Hoja</h1>
+              <a href="#">X</a>
+            </header>
+            <main>
+              <section class="flex justify-center items-start gap-5">
+                <article>
+                  <figure>
+                    <img class="w-100" src="./imgs/verde-hoja.png" alt="verde hoja" />
+                    <figcaption class="text-center">verde hoja</figcaption>
+                  </figure>
+                </article>
+                <article>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tenetur, debitis?
+                  </p>
+                </article>
+              </section>
+            </main>
+            <footer></footer>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

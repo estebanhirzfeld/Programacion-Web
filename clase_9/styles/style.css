@@ -1,0 +1,168 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.my-10 {
+  margin: 10px 0px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.py-10 {
+  padding: 10px 0px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-25 {
+  flex: 25%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.items-start {
+  align-items: start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.aspect-video {
+  aspect-ratio: 16/9;
+}
+
+.aspect-square {
+  aspect-ratio: 1/1;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+#formulario div * {
+  display: block;
+}
+
+@media (width < 430px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* MODAL ***************************** */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.411);
+  height: 100%;
+  overflow: auto;
+  display: none;
+}
+.modal {
+  width: 70%;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal header {
+  background-color: yellow;
+  padding: 10px;
+}
+.content {
+  padding-bottom: 10px;
+  background-color: white;
+  color: black;
+}
+#verdeHoja:target {
+  display: block;
+}
+/* MODAL ***************************** */
