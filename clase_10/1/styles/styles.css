@@ -1,0 +1,55 @@
+
+
+.animate ul li:nth-child(odd) {
+  background-color: red;
+  animation-name: odd;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.animate ul li:nth-child(even) {
+  background-color: orange;
+  animation-name: even;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes odd {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes even {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.box {
+  margin-left: 0px;
+  width: 100px;
+  height: 100px;
+  background: grey;
+  animation-name: boxanimatiion;
+  transition-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes boxanimatiion {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 100px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,56 @@
+:root {
+  color-scheme: dark;
+}
+
+.ball {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(238, 130, 238, 0.116);
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  animation-name: ball;
+  animation-duration: 4s;
+  /* animation-iteration-count: infinite;*/
+}
+.container {
+  animation-name: hidden;
+  animation-duration: 4s;
+  /*animation-iteration-count: infinite;*/
+  background-color: transparent;
+  position: relative;
+}
+
+@keyframes ball {
+  0% {
+    width: 100px;
+    aspect-ratio: 1/1;
+    margin-top: 0px;
+    border-radius: 100%;
+  }
+  25% {
+    width: 100px;
+    margin-top: 80vh;
+  }
+  50% {
+    width: 100px;
+    margin-top: 0px;
+  }
+  100% {
+    width: 100%;
+    border-radius: 0px;
+    height: 100px;
+  }
+}
+
+@keyframes hidden {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
